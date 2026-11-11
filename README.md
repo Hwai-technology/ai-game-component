@@ -274,6 +274,13 @@ The repository includes a modern GitHub Actions automation suite in `.github/wor
 
 ---
 
-## 12. License
+## 12. License & Terms
 
-MIT License. Designed with engineering precision for mobile game developers and AI tools.
+GameKit is licensed under the **GameKit Community Reciprocal License (Share-Alike / Non-Resale)**.
+
+### Summary of Rights and Restrictions:
+- **Free for Game Developers:** You are free to inspect, modify, and integrate all GameKit components and UI widgets into your mobile games, commercial applications, and interactive projects.
+- **No Direct Resale of Source:** You may **not** repackage, resell, or distribute the raw source code or component library as a standalone developer template, paid asset pack, or component marketplace product.
+- **Reciprocity Requirement (Copyleft / Share-Alike):** If you make improvements, fixes, or enhancements to the core engine components, you must share those enhancements openly under the same license terms so the broader developer ecosystem benefits.
+
+See the full [LICENSE](file:///home/ahmet/Desktop/Projects/ai-game-component/LICENSE) for complete legal terms.

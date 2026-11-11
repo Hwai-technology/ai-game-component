@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "node --import tsx --test 'core/**/tests/*.test.ts' 'components/**/tests/*.test.ts' 'cli/tests/*.test.ts' 'examples/**/tests/*.test.ts'",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit && tsc --project ui-kit/tsconfig.json --noEmit",
     "gamekit": "node --import tsx cli/bin/gamekit.ts"
   },
   "workspaces": [

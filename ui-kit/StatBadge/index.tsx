@@ -47,18 +47,20 @@ export function CoinChip({ value, onAdd, style }: CoinChipProps) {
 // ---------------------------------------------------------------------------
 
 export type LivesChipProps = {
-  current: number;
+  current?: number;
+  count?: number;
   max?: number;
   style?: ViewStyle;
 };
 
-export function LivesChip({ current, style }: LivesChipProps) {
+export function LivesChip({ current, count, style }: LivesChipProps) {
+  const value = current ?? count ?? 0;
   return (
     <View style={[styles.pill, style]}>
       <Ionicons
         name="heart"
         size={22}
-        color={current > 0 ? palette.red[500] : text.muted}
+        color={value > 0 ? palette.red[500] : text.muted}
       />
     </View>
   );

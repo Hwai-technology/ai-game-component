@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
     opacity: 0.6,
   },
   cooldownOverlay: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     backgroundColor: 'rgba(44, 32, 73, 0.75)',
     alignItems: 'center',
     justifyContent: 'center',

@@ -7,6 +7,8 @@ export const fontFamily = {
   medium: 'System',
   bold: 'System',
   heavy: 'System',
+  arabicMedium: 'System',
+  arabicBold: 'System',
 } as const;
 
 export const fontSize = {
