@@ -15,7 +15,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "test": "node --import tsx --test 'core/**/tests/*.test.ts' 'components/**/tests/*.test.ts' 'cli/tests/*.test.ts' 'examples/**/tests/*.test.ts'",
+    "test": "node --import tsx scripts/test-runner.ts",
     "typecheck": "tsc --noEmit && tsc --project ui-kit/tsconfig.json --noEmit",
     "gamekit": "node --import tsx cli/bin/gamekit.ts"
   },
