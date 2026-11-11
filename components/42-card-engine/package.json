@@ -1,0 +1,13 @@
+{
+  "name": "@gamekit/42-card-engine",
+  "version": "1.0.0",
+  "description": "Deck shuffling, card drawing, hand management, and discard pile cycling engine",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/error-system": "1.0.0",
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

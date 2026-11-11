@@ -1,0 +1,12 @@
+{
+  "name": "@gamekit/34-tilemap-world",
+  "version": "1.0.0",
+  "description": "Multi-layer 2D tilemap world with coordinate conversion and solid tile query",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

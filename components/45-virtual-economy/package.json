@@ -1,0 +1,13 @@
+{
+  "name": "@gamekit/45-virtual-economy",
+  "version": "1.0.0",
+  "description": "Virtual multi-currency ledger, transaction auditor, and purchase affordability engine",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/error-system": "1.0.0",
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

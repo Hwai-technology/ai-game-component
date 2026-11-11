@@ -1,0 +1,9 @@
+{
+  "name": "@gamekit/example-rpg-combat",
+  "version": "1.0.0",
+  "description": "Composition example: Turn-Based RPG Combat combining inventory, equipment, character stats, health/damage mitigation, skills, and combat loop",
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test 'tests/**/*.test.ts'"
+  }
+}

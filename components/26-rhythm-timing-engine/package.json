@@ -1,0 +1,12 @@
+{
+  "name": "@gamekit/26-rhythm-timing-engine",
+  "version": "1.0.0",
+  "description": "Rhythm and beat timeline engine with millisecond timing windows and combo progression",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

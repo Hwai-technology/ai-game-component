@@ -1,0 +1,13 @@
+{
+  "name": "@gamekit/36-equipment-system",
+  "version": "1.0.0",
+  "description": "RPG equipment slot assignment, stat modifier aggregation, and unequip engine",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/error-system": "1.0.0",
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

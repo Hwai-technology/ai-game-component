@@ -1,0 +1,9 @@
+{
+  "name": "@gamekit/example-endless-runner",
+  "version": "1.0.0",
+  "description": "Composition example: Endless Runner combining game loop, input, runner engine, collectibles, obstacles, collision, and scoring",
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test 'tests/**/*.test.ts'"
+  }
+}

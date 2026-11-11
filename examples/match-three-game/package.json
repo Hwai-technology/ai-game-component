@@ -1,0 +1,9 @@
+{
+  "name": "@gamekit/example-match-three",
+  "version": "1.0.0",
+  "description": "Composition example: Match-3 Game with cascade gravity, scoring combos, virtual currency rewards, and achievements",
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test 'tests/**/*.test.ts'"
+  }
+}

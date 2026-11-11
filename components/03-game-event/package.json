@@ -1,0 +1,13 @@
+{
+  "name": "@gamekit/03-game-event",
+  "version": "1.0.0",
+  "description": "Typed Event Manager with middleware, envelope telemetry, and lifecycle safety",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/event-system": "1.0.0",
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

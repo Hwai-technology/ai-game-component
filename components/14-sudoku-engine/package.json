@@ -1,0 +1,13 @@
+{
+  "name": "@gamekit/14-sudoku-engine",
+  "version": "1.0.0",
+  "description": "9x9 Sudoku engine with real-time conflict detection, hint generator, and backtracking solver",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/error-system": "1.0.0",
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

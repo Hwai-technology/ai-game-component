@@ -1,0 +1,12 @@
+{
+  "name": "@gamekit/08-game-lifecycle",
+  "version": "1.0.0",
+  "description": "App foreground/background lifecycle supervisor with automatic pause policies",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@gamekit/46-achievement-system",
+  "version": "1.0.0",
+  "description": "Milestone and progress-driven game achievement and badge unlock engine",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

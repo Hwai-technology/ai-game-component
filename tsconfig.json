@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "@core/*": ["core/*/src"],
+      "@gamekit/*": ["components/*/src"]
+    }
+  },
+  "include": [
+    "core/**/*.ts",
+    "components/**/*.ts",
+    "cli/**/*.ts",
+    "examples/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "ui-kit"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@gamekit/06-game-input",
+  "version": "1.0.0",
+  "description": "Cross-platform touch, gesture, and action mapping engine",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

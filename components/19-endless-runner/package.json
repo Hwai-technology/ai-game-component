@@ -1,0 +1,12 @@
+{
+  "name": "@gamekit/19-endless-runner",
+  "version": "1.0.0",
+  "description": "Lane-switching, jump/slide, and speed acceleration endless runner simulation engine",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

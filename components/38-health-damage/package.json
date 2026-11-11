@@ -1,0 +1,12 @@
+{
+  "name": "@gamekit/38-health-damage",
+  "version": "1.0.0",
+  "description": "Health, damage mitigation, temporary shields, invulnerability frames, and death event system",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

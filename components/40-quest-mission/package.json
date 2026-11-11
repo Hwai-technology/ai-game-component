@@ -1,0 +1,12 @@
+{
+  "name": "@gamekit/40-quest-mission",
+  "version": "1.0.0",
+  "description": "RPG quest and mission tracking engine with prerequisite unlocking and objective progress",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

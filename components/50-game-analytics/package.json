@@ -1,0 +1,12 @@
+{
+  "name": "@gamekit/50-game-analytics",
+  "version": "1.0.0",
+  "description": "Privacy-conscious event buffering, gameplay metric tracking, and analytics dispatch engine",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}

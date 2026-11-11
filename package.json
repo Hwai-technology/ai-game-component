@@ -1,0 +1,27 @@
+{
+  "name": "ai-game-components",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-Native Game Components Ecosystem for React Native & Expo SDK 58",
+  "scripts": {
+    "test": "node --import tsx --test 'core/**/tests/*.test.ts' 'components/**/tests/*.test.ts'",
+    "typecheck": "tsc --noEmit",
+    "gamekit": "node -r ts-node/register cli/bin/gamekit.ts"
+  },
+  "workspaces": [
+    "core/*",
+    "components/*",
+    "cli",
+    "examples/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "npm@12.2.2",
+  "type": "module"
+}

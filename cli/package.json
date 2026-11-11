@@ -1,0 +1,15 @@
+{
+  "name": "@gamekit/cli",
+  "version": "1.0.0",
+  "description": "Developer and AI Agent CLI for the GameKit 50-component ecosystem",
+  "type": "module",
+  "bin": {
+    "gamekit": "./bin/gamekit.ts"
+  },
+  "scripts": {
+    "test": "node --import tsx --test 'tests/**/*.test.ts'"
+  },
+  "dependencies": {
+    "@gamekit/component-registry": "*"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@gamekit/47-level-progression",
+  "version": "1.0.0",
+  "description": "Level completion, star ratings (1-3 stars), and sequential level unlocking engine",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@core/error-system": "1.0.0",
+    "@core/shared-types": "1.0.0"
+  },
+  "type": "module"
+}
