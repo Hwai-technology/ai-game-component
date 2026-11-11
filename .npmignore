@@ -1,0 +1,14 @@
+# Source files for publishing if compiling
+tests/
+__tests__/
+*.test.ts
+*.spec.ts
+.github/
+docs/
+examples/
+.expo/
+*.log
+.DS_Store
+tsconfig.json
+tsconfig.base.json
+

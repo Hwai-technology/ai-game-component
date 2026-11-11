@@ -1,0 +1,71 @@
+name: Update Contributors
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-contributors:
+    name: Recognize Contributors in README
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Contributors Table
+        run: |
+          node -e '
+            const fs = require("fs");
+            const { execSync } = require("child_process");
+
+            // Extract unique authors from git log
+            const log = execSync("git log --format=\"%aN|%aE\"").toString().trim();
+            const lines = log.split("\n");
+            const map = new Map();
+
+            for (const line of lines) {
+              const [name, email] = line.split("|");
+              if (!name || name.includes("[bot]") || name.includes("github-actions")) continue;
+              if (!map.has(name)) {
+                map.set(name, email);
+              }
+            }
+
+            let markdown = "\n";
+            for (const [name] of map) {
+              markdown += `- **${name}**\n`;
+            }
+            if (map.size === 0) {
+              markdown = "\n_Contributions are welcome! See CONTRIBUTING.md to get started._\n";
+            }
+
+            const readmePath = "README.md";
+            let readme = fs.readFileSync(readmePath, "utf-8");
+            const startToken = "<!-- CONTRIBUTORS-START -->";
+            const endToken = "<!-- CONTRIBUTORS-END -->";
+
+            if (readme.includes(startToken) && readme.includes(endToken)) {
+              const regex = new RegExp(`${startToken}[\\s\\S]*?${endToken}`, "g");
+              readme = readme.replace(regex, `${startToken}\n${markdown}\n${endToken}`);
+              fs.writeFileSync(readmePath, readme);
+              console.log("README contributors updated successfully.");
+            }
+          '
+
+      - name: Commit & Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "docs(contributors): update recognized contributors list [skip ci]"
+            git push origin main
+          fi
+
