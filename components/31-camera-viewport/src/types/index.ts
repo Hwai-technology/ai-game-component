@@ -12,3 +12,4 @@ export interface CameraState {
   center: Vector2D; // Center of camera in world space
   viewport: Dimensions2D;
 }
+

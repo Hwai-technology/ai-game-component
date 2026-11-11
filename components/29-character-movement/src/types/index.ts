@@ -15,3 +15,4 @@ export interface CharacterMovementState {
   facing: FacingDirection;
   isMoving: boolean;
 }
+

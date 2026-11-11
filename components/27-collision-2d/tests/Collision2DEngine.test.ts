@@ -32,3 +32,4 @@ test('Collision2DEngine: tests AABB and Circle intersections accurately', () => 
 
   engine.dispose();
 });
+

@@ -15,3 +15,4 @@ export interface SlidingPuzzleState {
   isSolved: boolean;
   emptyIndex: number;
 }
+

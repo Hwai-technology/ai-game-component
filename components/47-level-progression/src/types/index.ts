@@ -26,3 +26,4 @@ export interface ProgressionSummary {
   completedLevelsCount: number;
   totalLevels: number;
 }
+

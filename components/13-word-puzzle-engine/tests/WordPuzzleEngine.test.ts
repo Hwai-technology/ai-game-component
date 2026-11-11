@@ -40,3 +40,4 @@ test('WordPuzzleEngine: validates contiguous letter paths against dictionary', (
 
   engine.dispose();
 });
+

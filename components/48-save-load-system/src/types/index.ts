@@ -19,3 +19,4 @@ export interface SaveSystemConfig {
   storage?: IStorageAdapter;
   migrations?: Record<number, SaveDataMigration>;
 }
+

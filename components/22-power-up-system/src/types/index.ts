@@ -22,3 +22,4 @@ export type PowerUpLifecycleEvent =
   | { type: 'expired'; id: string };
 
 export type PowerUpEventListener = (event: PowerUpLifecycleEvent) => void;
+

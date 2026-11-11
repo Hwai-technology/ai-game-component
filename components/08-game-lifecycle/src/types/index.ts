@@ -13,3 +13,4 @@ export interface ILifecyclePlatformAdapter {
 }
 
 export type LifecycleListener = (state: AppLifecycleState) => void;
+

@@ -13,3 +13,4 @@ const board = generator.generate({
   tileFactory: (r, c, prng) => prng() > 0.5 ? 'RED' : 'BLUE'
 });
 ```
+

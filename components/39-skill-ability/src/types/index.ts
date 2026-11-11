@@ -22,3 +22,4 @@ export interface CastResult {
   manaConsumed: number;
   reason?: 'INSUFFICIENT_MANA' | 'ON_COOLDOWN' | 'UNKNOWN_SKILL';
 }
+

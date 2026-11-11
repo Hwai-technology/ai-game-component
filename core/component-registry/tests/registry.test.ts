@@ -29,6 +29,6 @@ describe('ComponentRegistry & 50 Components Specification', () => {
 
     const searchResults = registry.search('match-three');
     assert.ok(searchResults.length >= 1);
-    assert.equal(searchResults[0].id, '12-match-three-engine');
+    assert.equal(searchResults[0]?.id, '12-match-three-engine');
   });
 });

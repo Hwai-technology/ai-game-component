@@ -31,3 +31,4 @@ test('PathfindingEngine: finds path around obstacle wall using A*', () => {
 
   finder.dispose();
 });
+

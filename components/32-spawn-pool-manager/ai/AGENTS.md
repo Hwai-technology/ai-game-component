@@ -2,3 +2,4 @@
 
 ## Purpose & Scope
 Eliminates Garbage Collection micro-stutters during intense arcade, shooter, or runner gameplay by pre-allocating reusable entity instances and recycling them.
+

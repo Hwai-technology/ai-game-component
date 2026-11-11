@@ -29,3 +29,4 @@ test('VirtualEconomyEngine: manages currency balances and denies overspending', 
 
   economy.dispose();
 });
+

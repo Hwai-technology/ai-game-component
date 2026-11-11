@@ -23,3 +23,4 @@ test('CharacterMovementController: accelerates towards input and decelerates whe
 
   controller.dispose();
 });
+

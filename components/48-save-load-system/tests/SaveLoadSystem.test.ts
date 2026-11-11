@@ -39,3 +39,4 @@ test('SaveLoadSystem: serializes with checksum and migrates schema versions', as
   v1System.dispose();
   v2System.dispose();
 });
+

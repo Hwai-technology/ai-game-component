@@ -2,7 +2,7 @@ import { MatchThreeEngine, GridPosition } from '../../../components/12-match-thr
 import { ScoringEngine } from '../../../components/44-scoring-engine/src/index.js';
 import { VirtualEconomyEngine } from '../../../components/45-virtual-economy/src/index.js';
 import { AchievementSystem } from '../../../components/46-achievement-system/src/index.js';
-import { gleebooThemeTokens, createCartoonBoxStyle, gamePalette } from '../../../core/theme-adapter/src/index.js';
+import { gleebooThemeTokens, gamePalette } from '../../../core/theme-adapter/src/index.js';
 
 export interface MatchThreeGameConfig {
   rows?: number;
@@ -21,8 +21,8 @@ export class MatchThreeGame {
   constructor(config: MatchThreeGameConfig = {}) {
     this.board = new MatchThreeEngine({
       rows: config.rows ?? 8,
-      cols: config.cols ?? 8,
-      tileTypes: config.tileTypes ?? 5,
+      columns: config.cols ?? 8,
+      tileTypesCount: config.tileTypes ?? 5,
     });
 
     this.scoring = new ScoringEngine({
@@ -47,7 +47,7 @@ export class MatchThreeGame {
       title: 'First Match!',
       description: 'Make your very first tile match',
       maxProgress: 1,
-      reward: { currencyId: 'coins', amount: 50 },
+      rewardCoins: 50,
     });
 
     this.achievements.register({
@@ -55,7 +55,7 @@ export class MatchThreeGame {
       title: 'Combo Master',
       description: 'Trigger a cascading 3x combo chain',
       maxProgress: 3,
-      reward: { currencyId: 'gems', amount: 5 },
+      rewardCoins: 100,
     });
 
     this.achievements.register({

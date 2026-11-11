@@ -16,17 +16,16 @@ describe('RpgCombatGame Composition Suite', () => {
 
   it('equips weapons and enhances character stats', () => {
     const game = new RpgCombatGame();
-    const initialStrength = game.stats.getEffectivePrimary('strength');
+    const initialStrength = game.stats.getEffectivePrimary().strength;
 
     game.equipWeapon({
       id: 'sword_excalibur',
       name: 'Excalibur',
-      slot: 'weapon',
-      statModifiers: { strength: 10 },
-      durability: 100,
+      slotType: 'main_hand',
+      modifiers: { strength: 10 },
     });
 
-    const boostedStrength = game.stats.getEffectivePrimary('strength');
+    const boostedStrength = game.stats.getEffectivePrimary().strength;
     assert.equal(boostedStrength, initialStrength + 10);
   });
 

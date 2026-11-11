@@ -33,3 +33,4 @@ test('AchievementSystem: tracks incremental progress and triggers unlock events'
 
   achSystem.dispose();
 });
+

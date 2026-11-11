@@ -24,3 +24,4 @@ export interface CollectionEvent {
   totalCollectedCount: number;
   totalValue: number;
 }
+

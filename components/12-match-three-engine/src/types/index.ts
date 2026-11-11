@@ -36,3 +36,4 @@ export interface MatchThreeState {
   movesRemaining: number;
   isGameOver: boolean;
 }
+

@@ -31,3 +31,4 @@ export interface RhythmState {
   notesMissed: number;
   accuracy: number; // 0.0 to 1.0
 }
+

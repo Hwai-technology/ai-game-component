@@ -26,3 +26,4 @@ test('LeaderboardAdapter: submits scores and sorts ranks in descending order', a
 
   leaderboard.dispose();
 });
+

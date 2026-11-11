@@ -26,3 +26,4 @@ describe('GameKit CLI Suite', () => {
     assert.doesNotThrow(() => handleCompatibility());
   });
 });
+

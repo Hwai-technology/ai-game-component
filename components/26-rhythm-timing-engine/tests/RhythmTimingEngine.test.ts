@@ -33,3 +33,4 @@ test('RhythmTimingEngine: classifies hits into perfect, great, good, and miss wi
 
   engine.dispose();
 });
+

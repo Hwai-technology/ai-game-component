@@ -37,3 +37,4 @@ test('EquipmentSystem: equips gear, enforces slot match, and aggregates bonuses'
 
   equip.dispose();
 });
+

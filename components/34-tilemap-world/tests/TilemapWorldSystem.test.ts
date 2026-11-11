@@ -32,3 +32,4 @@ test('TilemapWorldSystem: projects coordinates and detects solid tile collision'
 
   map.dispose();
 });
+

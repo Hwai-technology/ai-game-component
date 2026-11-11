@@ -37,3 +37,4 @@ export interface CombatState {
   isBattleOver: boolean;
   winner?: CombatTeam;
 }
+

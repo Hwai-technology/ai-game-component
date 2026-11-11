@@ -27,3 +27,4 @@ export interface GameStateConfig<S extends string = StandardGameState> {
   transitions?: StateTransition<S>[];
   maxHistoryLength?: number;
 }
+

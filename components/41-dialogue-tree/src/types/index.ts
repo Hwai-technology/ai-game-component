@@ -22,3 +22,4 @@ export interface DialogueState {
   availableChoices: DialogueChoice[];
   isEnded: boolean;
 }
+

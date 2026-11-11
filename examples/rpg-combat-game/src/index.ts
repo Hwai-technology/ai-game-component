@@ -1,4 +1,4 @@
-import { InventorySystem, InventoryItem } from '../../../components/35-inventory-system/src/index.js';
+import { InventorySystem } from '../../../components/35-inventory-system/src/index.js';
 import { EquipmentSystem, EquipmentItem } from '../../../components/36-equipment-system/src/index.js';
 import { CharacterStatsEngine } from '../../../components/37-character-stats/src/index.js';
 import { HealthDamageSystem } from '../../../components/38-health-damage/src/index.js';
@@ -23,16 +23,17 @@ export class RpgCombatGame {
 
   public readonly heroId = 'hero';
   public readonly enemyId = 'goblin_boss';
+  private _heroMana = 50;
 
   constructor(heroConfig: RpgHeroConfig = { name: 'GleeBoo Knight' }) {
     this.inventory = new InventorySystem({
-      capacity: 20,
+      maxSlots: 20,
     });
 
     this.equipment = new EquipmentSystem();
 
     this.stats = new CharacterStatsEngine({
-      basePrimary: {
+      initialAttributes: {
         strength: heroConfig.strength ?? 15,
         agility: heroConfig.agility ?? 12,
         intelligence: 10,
@@ -43,13 +44,9 @@ export class RpgCombatGame {
     const maxHp = heroConfig.maxHealth ?? 100;
     this.heroHealth = new HealthDamageSystem({
       maxHealth: maxHp,
-      baseArmor: 5,
     });
 
-    this.skills = new SkillAbilitySystem({
-      currentMana: 50,
-      maxMana: 50,
-    });
+    this.skills = new SkillAbilitySystem();
 
     // Register starting skills
     this.skills.learnSkill({
@@ -57,17 +54,20 @@ export class RpgCombatGame {
       name: 'Power Slash',
       manaCost: 15,
       cooldownSeconds: 2.0,
-      damageMultiplier: 1.8,
+      targetType: 'single_target',
+      basePower: 45,
     });
 
     // Populate starting inventory
-    this.inventory.addItem({
-      id: 'potion_hp',
-      name: 'Health Potion',
-      type: 'consumable',
-      quantity: 3,
-      maxStack: 10,
-    });
+    this.inventory.addItem(
+      {
+        id: 'potion_hp',
+        name: 'Health Potion',
+        isStackable: true,
+        maxStack: 10,
+      },
+      3
+    );
 
     // Initialize turn-based combat with hero and enemy
     const heroCombatant: Combatant = {
@@ -95,13 +95,15 @@ export class RpgCombatGame {
     this.combat = new TurnBasedCombatEngine([heroCombatant, enemyCombatant]);
   }
 
+  public get heroMana(): number {
+    return this._heroMana;
+  }
+
   public equipWeapon(item: EquipmentItem): void {
-    this.equipment.equip(item);
+    this.equipment.equip(item.slotType, item);
     // Apply stat modifiers to CharacterStatsEngine
     const mods = this.equipment.getAggregatedModifiers();
-    for (const [stat, val] of Object.entries(mods)) {
-      this.stats.setModifier(`equip_${stat}`, stat as any, val);
-    }
+    this.stats.setModifier('equipment_stats', mods);
   }
 
   public useHealthPotion(): boolean {
@@ -127,12 +129,16 @@ export class RpgCombatGame {
   }
 
   public heroCastSkill(skillId: string): { turnResult: CombatTurnResult; skillUsed: boolean } {
-    const canCast = this.skills.canCast(skillId);
-    if (!canCast) {
+    const check = this.skills.canCast(skillId, this._heroMana);
+    if (!check.canCast) {
       return { turnResult: this.heroAttack(), skillUsed: false };
     }
 
-    this.skills.cast(skillId);
+    const castResult = this.skills.cast(skillId, this._heroMana);
+    if (castResult.success) {
+      this._heroMana -= castResult.manaConsumed;
+    }
+
     const turnResult = this.combat.executeAction({
       actorId: this.heroId,
       type: 'attack',

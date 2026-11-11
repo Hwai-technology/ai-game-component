@@ -122,3 +122,4 @@ export class VirtualEconomyEngine implements Disposable, Serializable<EconomySta
     return tx;
   }
 }
+

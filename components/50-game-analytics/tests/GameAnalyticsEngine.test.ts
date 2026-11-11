@@ -19,3 +19,4 @@ test('GameAnalyticsEngine: buffers events and flushes at batch threshold', () =>
 
   analytics.dispose();
 });
+

@@ -29,3 +29,4 @@ test('CoinCollectibleSystem: detects proximity collection and invokes haptics', 
 
   system.dispose();
 });
+

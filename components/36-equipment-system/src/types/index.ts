@@ -18,3 +18,4 @@ export interface EquipmentState {
   equipped: Partial<Record<EquipmentSlotType, EquipmentItem>>;
   aggregatedModifiers: Record<string, number>;
 }
+

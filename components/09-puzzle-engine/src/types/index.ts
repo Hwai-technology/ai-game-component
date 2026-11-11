@@ -25,3 +25,4 @@ export interface PuzzleEngineConfig<TState, TMove> {
   rule: IPuzzleRule<TState, TMove>;
   maxMoves?: number;
 }
+

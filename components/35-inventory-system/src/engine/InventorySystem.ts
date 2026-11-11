@@ -144,3 +144,4 @@ export class InventorySystem implements Disposable, Serializable<InventoryState>
     this._isDisposed = true;
   }
 }
+

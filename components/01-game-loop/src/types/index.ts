@@ -31,3 +31,4 @@ export interface GameLoopState {
   totalTime: number;
   fps: number;
 }
+

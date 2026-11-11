@@ -45,3 +45,4 @@ export class MockEventSink<T = unknown> {
 export function assertApproxEqual(actual: number, expected: number, epsilon = 0.001): boolean {
   return Math.abs(actual - expected) <= epsilon;
 }
+

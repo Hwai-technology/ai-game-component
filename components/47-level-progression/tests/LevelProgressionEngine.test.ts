@@ -22,3 +22,4 @@ test('LevelProgressionEngine: completes level, unlocks next level, and calculate
 
   progression.dispose();
 });
+

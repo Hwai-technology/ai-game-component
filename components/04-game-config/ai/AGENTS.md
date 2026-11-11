@@ -10,3 +10,4 @@ const config = new GameConfigEngine({
   validator: (cfg) => cfg.maxLives > 0 ? null : 'Lives must be positive'
 });
 ```
+

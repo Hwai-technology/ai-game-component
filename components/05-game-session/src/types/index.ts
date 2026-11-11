@@ -17,3 +17,4 @@ export interface SessionConfig {
   tags?: string[];
   autoStart?: boolean;
 }
+

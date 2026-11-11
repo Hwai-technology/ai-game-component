@@ -33,3 +33,4 @@ loop.dispose();
 - **Expo SDK 58:** 100% Compatible with zero native build dependencies.
 - **Expo Go:** Fully functional.
 - **Headless Mode:** Supports deterministic `.step(delta)` for offline and unit testing.
+

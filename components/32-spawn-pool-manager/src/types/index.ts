@@ -10,3 +10,4 @@ export interface SpawnPoolConfig<T extends IPoolable> {
   initialSize?: number;
   maxSize?: number;
 }
+

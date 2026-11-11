@@ -17,3 +17,4 @@ export interface LogicPuzzleState {
   totalConstraints: number;
   isSolved: boolean;
 }
+

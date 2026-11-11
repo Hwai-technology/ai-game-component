@@ -9,3 +9,4 @@ export interface GameConfigOptions<T extends object> {
 }
 
 export type ConfigChangeListener<T> = (newConfig: Readonly<T>, oldConfig: Readonly<T>) => void;
+

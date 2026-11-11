@@ -23,3 +23,4 @@ const fsm = new GameStateManager({
 
 fsm.transitionTo('playing');
 ```
+

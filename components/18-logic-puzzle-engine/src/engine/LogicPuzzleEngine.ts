@@ -68,3 +68,4 @@ export class LogicPuzzleEngine implements Disposable {
     return sum === c.targetSum;
   }
 }
+

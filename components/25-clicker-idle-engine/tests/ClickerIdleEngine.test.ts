@@ -35,3 +35,4 @@ test('ClickerIdleEngine: handles clicks, generator purchases, passive income, an
 
   engine.dispose();
 });
+

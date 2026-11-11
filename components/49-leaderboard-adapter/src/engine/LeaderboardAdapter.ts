@@ -72,3 +72,4 @@ export class LeaderboardAdapter implements Disposable {
     this._isDisposed = true;
   }
 }
+

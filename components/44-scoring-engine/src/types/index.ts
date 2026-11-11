@@ -19,3 +19,4 @@ export interface ScoringState {
   multiplier: number;
   comboTimerRemaining: number;
 }
+

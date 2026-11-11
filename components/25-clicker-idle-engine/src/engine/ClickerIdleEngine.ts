@@ -119,3 +119,4 @@ export class ClickerIdleEngine implements Disposable, Serializable<IdleState> {
     this._isDisposed = true;
   }
 }
+

@@ -17,3 +17,4 @@ export interface PlatformerState {
   isJumping: boolean;
   canDoubleJump: boolean;
 }
+

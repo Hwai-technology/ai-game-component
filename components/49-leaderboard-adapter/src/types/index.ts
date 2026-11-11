@@ -11,3 +11,4 @@ export interface ILeaderboardBackend {
   getTopScores(limit: number, offset?: number): Promise<LeaderboardEntry[]>;
   getPlayerRank(playerId: string): Promise<LeaderboardEntry | null>;
 }
+

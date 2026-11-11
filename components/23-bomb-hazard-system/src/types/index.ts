@@ -19,3 +19,4 @@ export interface DetonationEvent {
   bomb: BombHazard;
   impacts: BlastImpact[];
 }
+

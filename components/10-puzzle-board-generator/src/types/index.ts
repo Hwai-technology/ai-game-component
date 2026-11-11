@@ -11,3 +11,4 @@ export interface GeneratedBoard<T = number> {
   grid: T[][];
   seed: number;
 }
+

@@ -16,3 +16,4 @@ export interface CardEngineState {
   discardPileCount: number;
   hand: CardItem[];
 }
+

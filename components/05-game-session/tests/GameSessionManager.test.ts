@@ -21,3 +21,4 @@ test('GameSessionManager: tracks session metrics and duration accurately', async
 
   session.dispose();
 });
+

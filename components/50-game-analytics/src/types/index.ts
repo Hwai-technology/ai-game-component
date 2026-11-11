@@ -13,3 +13,4 @@ export interface AnalyticsConfig {
   batchSize?: number; // default 20
   provider?: IAnalyticsProvider;
 }
+

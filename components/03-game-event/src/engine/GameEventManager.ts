@@ -77,3 +77,4 @@ export class GameEventManager<Events extends Record<string, unknown> = Record<st
     this.middlewares.length = 0;
   }
 }
+

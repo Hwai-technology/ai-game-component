@@ -13,3 +13,4 @@ export interface PathfindingResult {
   path: PathNode[];
   cost: number;
 }
+

@@ -5,3 +5,4 @@ Supervises operating system lifecycle transitions (active, background, inactive)
 
 ## React Native Adapter
 For React Native / Expo, wire `AppState.addEventListener('change', ...)` to the `ILifecyclePlatformAdapter` interface.
+

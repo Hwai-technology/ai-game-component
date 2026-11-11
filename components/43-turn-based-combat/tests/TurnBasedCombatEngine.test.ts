@@ -26,3 +26,4 @@ test('TurnBasedCombatEngine: executes speed-based turn order and resolves victor
 
   battle.dispose();
 });
+

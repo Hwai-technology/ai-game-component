@@ -14,3 +14,4 @@ test('PuzzleBoardGenerator: generates identical grids from identical seeds', () 
   assert.equal(board1.rows, 3);
   assert.equal(board1.columns, 4);
 });
+

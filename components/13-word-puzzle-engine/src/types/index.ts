@@ -26,3 +26,4 @@ export interface WordPuzzleState {
   foundWords: string[];
   totalScore: number;
 }
+

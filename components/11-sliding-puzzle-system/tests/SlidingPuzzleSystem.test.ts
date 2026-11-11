@@ -20,3 +20,4 @@ test('SlidingPuzzleSystem: validates adjacent sliding and recognizes victory', (
 
   puzzle.dispose();
 });
+

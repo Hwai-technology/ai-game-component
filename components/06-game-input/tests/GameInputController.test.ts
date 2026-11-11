@@ -40,3 +40,4 @@ test('GameInputController: detects swipe directions and triggers mapped actions'
 
   controller.dispose();
 });
+

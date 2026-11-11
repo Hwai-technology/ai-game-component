@@ -146,3 +146,4 @@ export class RhythmTimingEngine implements Disposable {
     this.notes.length = 0;
   }
 }
+

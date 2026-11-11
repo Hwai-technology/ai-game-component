@@ -64,3 +64,4 @@ export class GameAnalyticsEngine implements Disposable {
     this.buffer.length = 0;
   }
 }
+

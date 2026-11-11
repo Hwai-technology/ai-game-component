@@ -32,3 +32,4 @@ test('LogicPuzzleEngine: verifies constraint satisfaction and solves puzzle', ()
 
   engine.dispose();
 });
+

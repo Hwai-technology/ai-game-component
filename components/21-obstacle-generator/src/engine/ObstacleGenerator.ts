@@ -82,3 +82,4 @@ export class ObstacleGenerator implements Disposable {
     return obstacle;
   }
 }
+

@@ -35,3 +35,4 @@ test('GameEventBus handles once listeners', () => {
   bus.emit('ping', 2);
   assert.equal(count, 1, 'once listener should only fire once');
 });
+

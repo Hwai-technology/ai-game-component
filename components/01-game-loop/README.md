@@ -18,3 +18,4 @@ loop.onUpdate(({ deltaTime }) => {
 });
 loop.start();
 ```
+

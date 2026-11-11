@@ -16,3 +16,4 @@ export interface PhysicsWorldConfig {
   gravity?: Vector2D; // default { x: 0, y: 980 } px/s^2
   airResistance?: number; // 0 to 1
 }
+

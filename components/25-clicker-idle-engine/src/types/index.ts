@@ -22,3 +22,4 @@ export interface IdleState {
   generators: IdleGenerator[];
   lastSavedTimestamp: number;
 }
+

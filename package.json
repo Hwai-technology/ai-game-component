@@ -4,9 +4,9 @@
   "private": true,
   "description": "AI-Native Game Components Ecosystem for React Native & Expo SDK 58",
   "scripts": {
-    "test": "node --import tsx --test 'core/**/tests/*.test.ts' 'components/**/tests/*.test.ts'",
+    "test": "node --import tsx --test 'core/**/tests/*.test.ts' 'components/**/tests/*.test.ts' 'cli/tests/*.test.ts' 'examples/**/tests/*.test.ts'",
     "typecheck": "tsc --noEmit",
-    "gamekit": "node -r ts-node/register cli/bin/gamekit.ts"
+    "gamekit": "node --import tsx cli/bin/gamekit.ts"
   },
   "workspaces": [
     "core/*",

@@ -83,3 +83,4 @@ export class GameEventBus<Events extends Record<string, unknown> = Record<string
     return this.listeners.get(event)?.size ?? 0;
   }
 }
+

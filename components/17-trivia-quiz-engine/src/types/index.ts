@@ -31,3 +31,4 @@ export interface TriviaQuizState {
   correctAnswersCount: number;
   isComplete: boolean;
 }
+

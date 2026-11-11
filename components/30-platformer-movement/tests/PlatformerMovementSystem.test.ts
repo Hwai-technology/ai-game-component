@@ -33,3 +33,4 @@ test('PlatformerMovementSystem: jumps, executes double jump, and lands on floor'
 
   player.dispose();
 });
+

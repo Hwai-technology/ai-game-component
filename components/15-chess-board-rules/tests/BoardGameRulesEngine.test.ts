@@ -21,3 +21,4 @@ test('BoardGameRulesEngine: manages turns, validates moves, and records captures
 
   engine.dispose();
 });
+

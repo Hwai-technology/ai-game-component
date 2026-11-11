@@ -2,3 +2,4 @@
 
 ## Purpose & Scope
 Procedurally generates runner hazards across discrete lanes at calibrated distance intervals.
+

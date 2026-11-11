@@ -20,3 +20,4 @@ export interface ReactionEngineState {
   averageReactionTimeMs: number;
   history: ReactionRoundResult[];
 }
+

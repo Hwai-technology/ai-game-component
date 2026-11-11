@@ -22,3 +22,4 @@ export interface InventoryState {
   slots: (ItemStack | null)[];
   totalItemCount: number;
 }
+

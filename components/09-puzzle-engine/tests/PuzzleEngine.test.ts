@@ -32,3 +32,4 @@ test('PuzzleEngine: validates moves and reaches win condition', () => {
 
   puzzle.dispose();
 });
+

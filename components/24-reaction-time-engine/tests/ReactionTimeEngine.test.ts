@@ -26,3 +26,4 @@ test('ReactionTimeEngine: detects false start and measures valid tap latency', (
 
   engine.dispose();
 });
+

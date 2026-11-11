@@ -23,3 +23,4 @@ export interface TimerState {
 
 export type TimerTickListener = (state: TimerState) => void;
 export type TimerExpireListener = (state: TimerState) => void;
+

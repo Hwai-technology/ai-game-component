@@ -105,3 +105,4 @@ export class EndlessRunnerEngine implements Disposable {
     this._isDisposed = true;
   }
 }
+

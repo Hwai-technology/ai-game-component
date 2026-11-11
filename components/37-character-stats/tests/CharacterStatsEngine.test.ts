@@ -23,3 +23,4 @@ test('CharacterStatsEngine: calculates derived statistics and levels up with XP'
 
   stats.dispose();
 });
+

@@ -25,3 +25,4 @@ test('ScoringEngine: applies streak multipliers and drops combo after inactivity
 
   engine.dispose();
 });
+

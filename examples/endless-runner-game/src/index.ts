@@ -44,7 +44,7 @@ export class EndlessRunnerGame {
 
     this.scoring = new ScoringEngine({
       maxMultiplier: 8,
-      multiplierDecayTime: 3.0,
+      comboTimeoutSeconds: 3.0,
     });
 
     this.loop = new GameLoopEngine({
@@ -52,7 +52,7 @@ export class EndlessRunnerGame {
       fixedTimestep: true,
       autoStart: false,
     });
-    this.loop.onUpdate((dt: number) => this.tick(dt));
+    this.loop.onUpdate((payload) => this.tick(payload.deltaTime));
   }
 
   public get isGameOver(): boolean {
@@ -138,14 +138,7 @@ export class EndlessRunnerGame {
     };
 
     for (const obs of this.obstacles.getActiveObstacles()) {
-      const obsBox = {
-        x: obs.position.x - 30,
-        y: obs.position.y,
-        width: 60,
-        height: 60,
-      };
-
-      if (this.collision.checkAABB(playerBox, obsBox)) {
+      if (Collision2DEngine.testRectRect(playerBox, obs.bounds)) {
         this._isGameOver = true;
         this.loop.stop();
         break;

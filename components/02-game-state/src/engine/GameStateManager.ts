@@ -150,3 +150,4 @@ export class GameStateManager<S extends string = StandardGameState> implements D
     this.exitHooks.clear();
   }
 }
+

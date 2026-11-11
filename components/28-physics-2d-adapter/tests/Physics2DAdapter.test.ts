@@ -32,3 +32,4 @@ test('Physics2DAdapter: integrates velocity, gravity, and impulses', () => {
 
   world.dispose();
 });
+

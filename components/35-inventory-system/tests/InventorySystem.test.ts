@@ -31,3 +31,4 @@ test('InventorySystem: stacks stackable items and swaps slots', () => {
 
   inv.dispose();
 });
+

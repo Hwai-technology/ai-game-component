@@ -39,3 +39,4 @@ export interface BoardGameState {
   isGameOver: boolean;
   winner?: PlayerColor | 'draw';
 }
+

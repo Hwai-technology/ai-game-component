@@ -24,3 +24,4 @@ export interface MemoryMatchingState<T = string | number> {
   matchesCount: number;
   isComplete: boolean;
 }
+

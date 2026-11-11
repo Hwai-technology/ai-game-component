@@ -43,3 +43,4 @@ test('TriviaQuizEngine: validates answers, calculates score, and tracks completi
 
   engine.dispose();
 });
+

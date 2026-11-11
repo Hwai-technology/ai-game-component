@@ -26,3 +26,4 @@ export interface CharacterStatsState {
   primary: PrimaryAttributes;
   derived: DerivedStatistics;
 }
+

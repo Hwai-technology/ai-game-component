@@ -5,3 +5,4 @@ Translates raw pointer/touch screen interactions into discrete gameplay gestures
 
 ## Integration
 In React Native, wrap your game view with PanResponder or GestureHandler, and forward coordinates to `controller.onPointerDown`, `onPointerMove`, and `onPointerUp`.
+

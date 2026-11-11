@@ -27,3 +27,4 @@ test('EndlessRunnerEngine: switches lanes, accelerates distance, and handles cra
 
   runner.dispose();
 });
+

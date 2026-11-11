@@ -32,3 +32,4 @@ test('BombHazardSystem: detonates on fuse expiration and applies radial damage f
 
   system.dispose();
 });
+

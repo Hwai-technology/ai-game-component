@@ -79,3 +79,4 @@ export class SpawnPoolManager<T extends IPoolable> implements Disposable {
     this.pool.length = 0;
   }
 }
+

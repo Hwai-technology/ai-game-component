@@ -21,3 +21,4 @@ export interface EconomyState {
   balances: Record<CurrencyId, number>;
   transactions: EconomyTransaction[];
 }
+

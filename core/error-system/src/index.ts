@@ -44,3 +44,4 @@ export class EntityNotFoundError extends GameError {
     super(`${entityType} with ID '${id}' not found`, 'ENTITY_NOT_FOUND', { entityType, id });
   }
 }
+

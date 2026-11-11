@@ -98,3 +98,4 @@ export class CharacterMovementController implements Disposable {
     else if (angle >= -67.5 && angle < -22.5) this.facing = 'up_right';
   }
 }
+

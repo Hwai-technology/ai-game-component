@@ -16,3 +16,4 @@ export interface SudokuState {
   isValid: boolean;
   emptyCellsRemaining: number;
 }
+

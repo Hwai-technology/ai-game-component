@@ -16,3 +16,4 @@ export interface EndlessRunnerState {
   currentSpeed: number;
   isGameOver: boolean;
 }
+

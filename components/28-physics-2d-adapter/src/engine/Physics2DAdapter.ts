@@ -78,3 +78,4 @@ export class Physics2DAdapter implements Disposable {
     this.bodies.clear();
   }
 }
+

@@ -40,3 +40,4 @@ test('PowerUpSystem: activates buffs, extends duration, and handles expiration',
 
   system.dispose();
 });
+

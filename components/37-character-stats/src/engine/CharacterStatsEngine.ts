@@ -100,3 +100,4 @@ export class CharacterStatsEngine implements Disposable {
     this.temporaryModifiers.clear();
   }
 }
+

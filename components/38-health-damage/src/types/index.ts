@@ -20,3 +20,4 @@ export interface HealthState {
   isInvulnerable: boolean;
   isDead: boolean;
 }
+

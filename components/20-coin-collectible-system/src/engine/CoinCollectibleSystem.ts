@@ -111,3 +111,4 @@ export class CoinCollectibleSystem implements Disposable {
     this.listeners.clear();
   }
 }
+

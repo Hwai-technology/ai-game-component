@@ -15,3 +15,4 @@ export interface ObstacleGeneratorConfig {
   lanesCount?: number; // default 3
   laneWidth?: number; // default 100
 }
+

@@ -25,3 +25,4 @@ test('GameLifecycleManager: triggers pause on background and respects resumePoli
 
   manager.dispose();
 });
+
