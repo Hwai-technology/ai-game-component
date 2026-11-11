@@ -254,8 +254,9 @@ If GameKit helps you build your games, consider supporting its maintenance and c
 We celebrate and recognize all engineers and community members who contribute to GameKit!
 
 <!-- CONTRIBUTORS-START -->
-- **Ahmet** (Lead Architect & Core Maintainer)
-- _Contributions are welcome! See CONTRIBUTING.md to get started._
+
+- **Eng.Ahmet Asaad Hammoud**
+
 <!-- CONTRIBUTORS-END -->
 
 ---
