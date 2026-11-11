@@ -10,7 +10,7 @@
     "test": "node --import tsx --test 'tests/**/*.test.ts'"
   },
   "dependencies": {
-    "@gamekit/component-registry": "*"
+    "@core/component-registry": "*"
   }
 }
 
