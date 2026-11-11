@@ -23,5 +23,23 @@ export const shadows = {
     shadowRadius: 4,
     elevation: 2,
   },
-} as const;
-
+  fab: {
+    shadowColor: '#2C2049',
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.2,
+    shadowRadius: 10,
+    elevation: 6,
+  },
+  text: {
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
+    textShadowOffset: { width: 0, height: 2 },
+    textShadowRadius: 3,
+  },
+  button: (color: string = '#2C2049') => ({
+    shadowColor: color,
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.18,
+    shadowRadius: 4,
+    elevation: 3,
+  }),
+};
