@@ -77,4 +77,39 @@ export type { ToggleProps } from './Toggle';
 export { default as MarkdownViewer } from './MarkdownViewer';
 export type { MarkdownViewerProps } from './MarkdownViewer';
 
+// GameKit Design System & Theme Tokens
+export * from './theme';
+
+// General Mobile Game Ready-Made Components
+export { default as GameHUD } from './GameHUD';
+export type { GameHUDProps } from './GameHUD';
+
+export { default as PauseMenu } from './PauseMenu';
+export type { PauseMenuProps } from './PauseMenu';
+
+export { default as VictoryModal } from './VictoryModal';
+export type { VictoryModalProps } from './VictoryModal';
+
+export { default as GameOverModal } from './GameOverModal';
+export type { GameOverModalProps } from './GameOverModal';
+
+export { default as InventoryGrid } from './InventoryGrid';
+export type { InventoryGridProps, InventoryItemSlot, ItemRarity } from './InventoryGrid';
+
+export { default as VirtualJoystick } from './VirtualJoystick';
+export type { VirtualJoystickProps } from './VirtualJoystick';
+
+export { default as SkillButton } from './SkillButton';
+export type { SkillButtonProps } from './SkillButton';
+
+export { default as LeaderboardList } from './LeaderboardList';
+export type { LeaderboardListProps, LeaderboardEntry } from './LeaderboardList';
+
+export { default as ShopCard } from './ShopCard';
+export type { ShopCardProps } from './ShopCard';
+
+export { default as FloatingCombatText } from './FloatingCombatText';
+export type { FloatingCombatTextProps, CombatTextType } from './FloatingCombatText';
+
+
 

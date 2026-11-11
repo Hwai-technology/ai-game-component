@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, ViewStyle } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { spacing } from '@/constants/theme/tokens';
+import { spacing } from '../theme';
 import IconButton, { IconButtonProps } from '../IconButton';
 import { CoinChip } from '../StatBadge';
 

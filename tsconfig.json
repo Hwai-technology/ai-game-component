@@ -6,7 +6,8 @@
     "allowImportingTsExtensions": true,
     "paths": {
       "@core/*": ["core/*/src"],
-      "@gamekit/*": ["components/*/src"]
+      "@gamekit/*": ["components/*/src"],
+      "@/*": ["./*"]
     }
   },
   "include": [

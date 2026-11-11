@@ -8,7 +8,7 @@ import {
   surface,
   text,
   typography,
-} from '@/constants/theme/tokens';
+} from '../theme';
 import { useLanguage } from '@/hooks/useLanguage';
 import GameButton from '../GameButton';
 import GameCard from '../GameCard';

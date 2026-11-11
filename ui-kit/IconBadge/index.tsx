@@ -3,7 +3,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
 import { StyleSheet, View, ViewStyle } from 'react-native';
 
-import { gradients, palette, shadows, surface } from '@/constants/theme/tokens';
+import { gradients, palette, shadows, surface } from '../theme';
 
 type IoniconName = React.ComponentProps<typeof Ionicons>['name'];
 

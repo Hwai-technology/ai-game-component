@@ -17,7 +17,7 @@ import {
   surface,
   text,
   typography,
-} from '@/constants/theme/tokens';
+} from '../theme';
 
 type IoniconName = React.ComponentProps<typeof Ionicons>['name'];
 

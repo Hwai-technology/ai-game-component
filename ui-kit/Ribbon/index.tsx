@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, ViewStyle } from 'react-native';
 
-import { palette, radius, shadows, spacing, text, typography } from '@/constants/theme/tokens';
+import { palette, radius, shadows, spacing, text, typography } from '../theme';
 
 export type RibbonVariant = 'free' | 'new' | 'owned';
 

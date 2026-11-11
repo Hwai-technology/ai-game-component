@@ -1,7 +1,7 @@
 import React from 'react';
 import { Linking, Platform, StyleProp, StyleSheet, Text, TextStyle, View, ViewStyle } from 'react-native';
 
-import { palette, text as textColor, typography } from '@/constants/theme/tokens';
+import { palette, text as textColor, typography } from '../theme';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export interface MarkdownViewerProps {

@@ -10,7 +10,7 @@ import {
   ViewStyle,
 } from 'react-native';
 
-import { spacing, surface } from '@/constants/theme/tokens';
+import { spacing, surface } from '../theme';
 
 export type ModalContainerProps = {
   /** Controls native presentation. Keep the container mounted and toggle this flag. */

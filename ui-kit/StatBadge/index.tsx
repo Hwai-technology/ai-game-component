@@ -12,7 +12,7 @@ import {
   surface,
   text,
   typography,
-} from '@/constants/theme/tokens';
+} from '../theme';
 import { useLanguage } from '@/hooks';
 import StarCoin from '../StarCoin';
 

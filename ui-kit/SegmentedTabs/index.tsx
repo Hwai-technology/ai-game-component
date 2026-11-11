@@ -10,7 +10,7 @@ import {
   surface,
   text,
   typography,
-} from '@/constants/theme/tokens';
+} from '../theme';
 
 export type SegmentedTabsProps = {
   tabs: string[];

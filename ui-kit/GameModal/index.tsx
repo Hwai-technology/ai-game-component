@@ -11,7 +11,7 @@ import {
   spacing,
   text,
   typography,
-} from '@/constants/theme/tokens';
+} from '../theme';
 import IconButton from '../IconButton';
 import { CoinChip } from '../StatBadge';
 

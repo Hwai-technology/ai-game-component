@@ -3,7 +3,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
 import { StyleSheet, View, ViewStyle } from 'react-native';
 
-import { surface } from '@/constants/theme/tokens';
+import { surface } from '../theme';
 
 export type ScreenBackgroundProps = {
   /** Optional background artwork illustration (e.g. bg-home / bg-game). If omitted, renders clean gradient only. */

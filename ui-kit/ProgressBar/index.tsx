@@ -3,7 +3,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
 import { StyleSheet, View, ViewStyle } from 'react-native';
 
-import { gradients, palette, radius, spacing, surface, text } from '@/constants/theme/tokens';
+import { gradients, palette, radius, spacing, surface, text } from '../theme';
 
 // ---------------------------------------------------------------------------
 // LevelProgressBar — dark track with a gold gradient fill (game HUD)

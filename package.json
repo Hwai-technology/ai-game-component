@@ -3,6 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "description": "AI-Native Game Components Ecosystem for React Native & Expo SDK 58",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hwai-technology/ai-game-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hwai-technology/ai-game-component/issues"
+  },
+  "homepage": "https://github.com/Hwai-technology/ai-game-component#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "test": "node --import tsx --test 'core/**/tests/*.test.ts' 'components/**/tests/*.test.ts' 'cli/tests/*.test.ts' 'examples/**/tests/*.test.ts'",
     "typecheck": "tsc --noEmit",

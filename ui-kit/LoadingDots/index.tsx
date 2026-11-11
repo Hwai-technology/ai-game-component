@@ -9,7 +9,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 
-import { spacing, surface } from '@/constants/theme/tokens';
+import { spacing, surface } from '../theme';
 
 export type LoadingDotsProps = {
   count?: number;

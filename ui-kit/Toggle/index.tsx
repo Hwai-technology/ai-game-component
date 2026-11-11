@@ -8,7 +8,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 
-import { palette, radius, surface, text } from '@/constants/theme/tokens';
+import { palette, radius, surface, text } from '../theme';
 
 const TRACK_WIDTH = 54;
 const TRACK_HEIGHT = 32;

@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, ViewStyle } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { shadows, spacing, text, typography } from '@/constants/theme/tokens';
+import { shadows, spacing, text, typography } from '../theme';
 import { useLanguage } from '@/hooks/useLanguage';
 import IconButton, { IconButtonProps } from '../IconButton';
 

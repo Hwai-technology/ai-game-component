@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, ViewProps } from 'react-native';
 
-import { palette, radius, shadows, spacing, surface } from '@/constants/theme/tokens';
+import { palette, radius, shadows, spacing, surface } from '../theme';
 
 export type GameCardVariant = 'plain' | 'cream' | 'outlined';
 
